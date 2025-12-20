@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Awesome Azure Static Web App!</title>
+        <meta name="description" content="This is my awesome Azure Static Web App">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.webawesome.com/2aa6054376384442.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <wa-card style="max-width: 60ch; margin: auto">
+            <div class="wa-stack wa-align-items-start">
+                <h3 class="wa-heading-l">My First Static Web App</h3>
+                <p>Congratulations, you just deployed your first static web application! 🎉</p>
+                <wa-animated-image
+                    src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGd2Z21ubmV3eGE0N3o0bHZpMXpqeXBhenYzMnVmODg1MTM1b2I1eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiTnEHBh7qapyuvwQ/giphy.gif"
+                    alt="A glitter explosion"
+                    play=true
+                ></wa-animated-image>
+
+                <wa-popover for="popover_opening" placement="bottom">
+                <p>Ok, seriously this lab is over. Head back to my site and give another one a shot! 🙌</p>
+                <wa-button variant="neutral" appearance="filled-outlined" size="small" data-popover="close" variant="primary" href="https://anthonygardes.com/tag/labs/">Back to Labs</wa-button>
+                </wa-popover>
+                <wa-button id="popover_opening" variant="brand" size="small" appearance="filled-outlined">Button to Nothing!</wa-button>
+            </div>
+        </wa-card>
+    </body>
+</html>
