@@ -1,2 +1,1 @@
-# static-web-app-lab
-Static web application lab
+# Repo for Azure Labs
