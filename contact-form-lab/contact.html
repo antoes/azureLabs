@@ -5,25 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.webawesome.com/2aa6054376384442.js" crossorigin="anonymous"></script>
     <title>Azure Lab: Contact form w/ Logic App</title>
-    <style>
-        /* Simple styling for the popup */
-        dialog {
-            border: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            padding: 20px;
-            text-align: center;
-            font-family: sans-serif;
-        }
-        dialog::backdrop {
-            background: rgba(0, 0, 0, 0.5);
-        }
-        button#closeBtn {
-            margin-top: 10px;
-            padding: 5px 15px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
 
@@ -34,7 +15,7 @@
     </dialog>
 
     <div style="max-width: 50ch; justify-content: center; margin: auto; margin-top: 25px; font-family: sans-serif;">    
-        <form id="labForm" method="post" action="https://prod-17.northcentralus.logic.azure.com:443/workflows/5426731710534ee8a69b1d1b83c9ddc1/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=4kI6rIdvF40x5cjbsdxzZfrElaFH5glj7KN0KopS6vQ">
+        <form id="labForm" method="post" action="https://prod-131.westus.logic.azure.com:443/workflows/b50581c902334adcb8db847ab0f661b7/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=FyfHxHcKTF9x5LG1V4Iwm-bcBVvTKMv3R9SuFABv5qs">
             
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="fname" required><br>
@@ -72,7 +53,6 @@
             submitBtn.disabled = true;
 
             // C. Gather Data
-            // We map 'fname' to 'firstName' to match your Logic App schema
             const data = {
                 firstName: document.getElementById('fname').value,
                 lastName: document.getElementById('lname').value,
